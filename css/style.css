@@ -1,0 +1,702 @@
+/* 
+===========================================================
+					Re-SET
+===========================================================
+*/
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+/* 
+===========================================================
+					Type & Body
+===========================================================
+*/
+
+@font-face {
+	font-family: "ReithSans";
+	src: url("../font/BBCReithSans_W_Rg.woff2") format("woff2"), url("../font/BBCReithSans_W_Rg.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "ReithSans";
+	font-weight: 700;
+	src: url("../font/BBCReithSans_W_Bd.woff2") format("woff2"), url("../font/BBCReithSans_W_Bd.woff") format("woff");
+	font-display: swap;
+}
+
+body {
+	font-family: "ReithSans", sans-serif;
+	font-size: 22px;
+	color: #5a5a5a;
+	/* makes our font's rendering in a perfect way.*/
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+ul {
+	list-style: none;
+}
+
+.mainSiteContainer {
+	width: 100%;
+}
+
+/*
+======================================================
+						NAV - firstNavBar
+======================================================
+*/
+nav#navsContainer {
+	width: 100%;
+}
+
+nav#navsContainer .firstNavBar {
+	height: 40px;
+}
+
+nav#navsContainer .firstNavBar .row {
+	min-height: 100%;
+	max-height: 100%;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a {
+	float: left;
+	/* Padding For Alignment */
+	padding-top: 0.9%;
+	padding-bottom: 0.9%;
+	padding-right: 1.65%;
+	padding-left: 1.65%;
+	border-right: 1px solid #cccccc;
+
+	text-decoration: none;
+	text-align: center;
+	font-size: 59.09%;
+	font-weight: 700;
+	color: #333333;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a:hover {
+	padding-bottom: 0.509375%;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color2:hover {
+	border-bottom: 4px solid #007bc7;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color3:hover {
+	border-bottom: 4px solid #992211;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color4:hover {
+	border-bottom: 4px solid #ffd230;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color5:hover {
+	border-bottom: 4px solid #88ccee;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color6:hover {
+	border-bottom: 4px solid #ed3d7d;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color7:hover {
+	border-bottom: 4px solid #ff4900;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color8:hover {
+	border-bottom: 4px solid #90d200;
+}
+
+nav#navsContainer .firstNavBar .row .navBar a.color9:hover {
+	border-bottom: 4px solid #000;
+}
+
+
+
+nav#navsContainer div.firstNavBar div.row div.navBar a#siteLogo {
+	/* Padding For Alignment - it doesn't has any content */
+	padding-left: 6.4%;
+	padding-top: 0.9%;
+	padding-bottom: 2.3%;
+	text-align: center;
+
+	background-image: url(../img/bbc_logo.svg);
+	background-repeat: no-repeat;
+	background-attachment: scroll, scroll;
+	background-size: 84px;
+	background-position: 0px 8px;
+}
+
+nav#navsContainer .firstNavBar .row div.navBar a#signin {
+	/*             42px*/
+	padding-left: 3.28125%;
+	/*             50px*/
+	padding-right: 3.90625%;
+	background-image: url(../img/icon-sprite.svg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: 22px;
+	background-position: 14px 11px;
+}
+
+/*
+=========================   Form    ===============
+*/
+
+nav#navsContainer .firstNavBar .row div.navBar div.searchBoxSec form {
+	display: inline-block;
+	width: 15%;
+}
+
+nav#navsContainer .firstNavBar .row div.navBar div.searchBoxSec form div.greyBackground {
+	display: inline-block;
+	padding-top: 2%;
+	padding-bottom: 5.1%;
+	padding-left: 10.4%;
+}
+
+
+nav#navsContainer .firstNavBar .row div.navBar div.searchBoxSec form div input#searchBox {
+	background-color: #e4e4e4;
+	font-size: 59.09%;
+	font-weight: 700;
+	width: 85%;
+	height: 24px;
+	padding-left: 6px;
+}
+
+nav#navsContainer .firstNavBar .row div.navBar div.searchBoxSec form div button#searchSubmit {
+	font-size: 60%;
+	background-color: #e4e4e4;
+	height: 24px;
+	width: 15%;
+}
+
+/*
+======================================================
+						NAV - secondtNavBar
+======================================================
+*/
+
+nav#navsContainer .secondNavBar {
+	height: 56px;
+	background-color: #bb1919;
+	border-top: 1px solid #cccccc;
+}
+
+nav#navsContainer .secondNavBar h2 {
+	display: inline-block;
+	height: 30px;
+	font-size: 200%;
+	color: #fff;
+	font-weight: 100;
+	text-transform: uppercase;
+	position: relative;
+	left: -0.326%;
+}
+
+/*
+http://www.devign.me/css-stretch-a-box-to-its-parent-bounds/
+https://vanseodesign.com/css/vertical-centering/
+https://stackoverflow.com/questions/3264370/stretching-a-tag-to-fill-entire-li
+https://www.sessions.edu/color-calculator/
+*/
+
+
+/*
+======================================================
+						NAV - thirdNavBar
+======================================================
+*/
+
+nav#navsContainer .thirdNavBar {
+	height: 36px;
+	background-color: #bb1919;
+	color: #fff;
+	font-size: 59.09%;
+}
+
+nav#navsContainer .thirdNavBar div.row div.navMenuBar a {
+	float: left;
+	/*1280px*/
+	padding-top: 0.73%;
+	padding-bottom: 0.73%;
+	text-decoration: none;
+	color: #fff;
+}
+
+nav#navsContainer .thirdNavBar div.row div.navMenuBar a:hover {
+	padding-bottom: 0.4175%;
+	border-bottom: 4px solid #fff;
+}
+
+
+
+nav#navsContainer .thirdNavBar div.row div.navMenuBar a span {
+	display: inline-block;
+	border-right: 1px solid #bb454f;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+nav#navsContainer .thirdNavBar div.row div.navMenuBar a:first-of-type span {
+	display: inline-block;
+	border-right: 1px solid #bb454f;
+	padding-right: 12px;
+	padding-left: 0px;
+}
+
+
+nav#navsContainer .thirdNavBar div.row div.navMenuBar a:last-of-type {
+	float: none;
+	display: inline-block;
+}
+
+nav#navsContainer .thirdNavBar div.row div.navMenuBar a:last-of-type span {
+	display: inline-block;
+	padding-right: 12px;
+	padding-left: 12px;
+	border-right: 0;
+}
+
+nav#navsContainer h1#bbcBreak {
+	/* the only thing that removed the unwanted 1px space. */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	margin: -1px -1px -1px -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	white-space: nowrap;
+}
+
+
+
+
+/*
+======================================================
+					forthNavBar
+======================================================
+*/
+
+nav#navsContainer .forthNavBar {
+	width: 100%;
+	height: 40px;
+}
+
+nav#navsContainer .forthNavBar div.row div.subNavMenuBar a {
+	float: left;
+	text-decoration: none;
+	color: #333;
+	font-size: 72%;
+	padding-top: 12px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+nav#navsContainer .forthNavBar div.row div.subNavMenuBar a:first-of-type {
+	margin-left: -12px;
+	border-bottom: 4px solid #bb1919;
+	padding-left: 12px;
+}
+
+nav#navsContainer .forthNavBar div.row div.subNavMenuBar a:first-of-type:hover {
+	padding-left: 12px;
+}
+
+
+nav#navsContainer .forthNavBar div.row div.subNavMenuBar a:hover {
+	padding-top: 12px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0;
+	border-bottom: 4px solid #bb1919;
+}
+
+nav#navsContainer .forthNavBar div.row div.subNavMenuBar a span {
+	display: inline-block;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-right: 1px solid #dcdcdc;
+}
+
+
+
+
+nav#navsContainer .forthNavBar div.row div.subNavMenuBar a:first-of-type span {
+	display: inline-block;
+	padding-left: 0;
+	padding-right: 12px;
+	border-right: 1px solid #dcdcdc;
+}
+
+nav#navsContainer .forthNavBar div.row div.subNavMenuBar a:last-of-type span {
+	display: inline-block;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-right: 0px solid #dcdcdc;
+}
+
+/*
+======================================================
+					mainContent
+======================================================
+*/
+
+div.clear {
+	display: block;
+	clear: both;
+	height: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+div.mainSiteContainer a {
+	color: #222;
+	text-decoration: none;
+}
+
+.postsWrapper {
+	color: #5a5a5a;
+}
+
+div#headLine h3.postsTitle {
+	font-size: 126%;
+}
+
+div.postsWrapper h3.postsTitle {
+	font-size: 80%;
+}
+
+.postsTitle,
+.postsTitle * {
+	color: #222222;
+	text-decoration: none;
+}
+
+.postsSubTitle {
+	font-size: 63.64%;
+	padding-top: 3%;
+}
+
+.postsSubInfo {
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	font-size: 59.1%;
+	text-decoration: none;
+	color: #5a5a5a;
+}
+
+p.timeOfPost {
+	float: left;
+}
+
+.postsSubInfo .postTags a {
+	text-decoration: none;
+	color: #222;
+	margin-left: 7px;
+	border-left: 1px solid #dbdbdb;
+	padding-left: 7px;
+}
+
+div#useLinks {
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+div#useLinks a span {
+	display: inline-block;
+	padding-left: 7px;
+}
+
+/*
+=======================================
+				posts
+=======================================
+*/
+
+#post01 {}
+
+
+/*
+=======================================
+				Section & Titles
+=======================================
+*/
+
+section.justImgTxt div.secTitle {
+	padding-top: 2.5%;
+	padding-bottom: 0.625%;
+	min-height: 2px;
+
+}
+
+
+
+
+section.justImgTxt div.secTitle h4 {
+	padding-top: 0.625%;
+	padding-bottom: 0.625%;
+	font-size: 80%;
+	color: #222;
+	position: relative;
+	width: 100%;
+	min-height: 2px;
+}
+
+
+section.justImgTxt div.secTitle h4::before {
+	content: '';
+	background-color: #222;
+	width: auto;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	right: 0%;
+}
+
+
+/*
+=================================================================
+				Section latestUpdates
+=================================================================
+*/
+
+section#latestUpdates {
+	margin-top: 3%;
+}
+
+section#latestUpdates .postsWrapper {
+	float: none;
+	margin-top: 0;
+	margin-right: 20.625%;
+	margin-left: 20.625%;
+	padding-top: 1.875%;
+	padding-bottom: 1.875%;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+
+section#latestUpdates .postsWrapper:last-of-type {
+	border-bottom: 0px;
+}
+
+
+section#latestUpdates .postsWrapper p.timeOfPost {
+	float: none;
+}
+
+section#latestUpdates .postsWrapper h3.postsTitle {
+	font-size: 100%;
+	color: #1e1e1e;
+	padding-bottom: 1.25%;
+}
+
+section#latestUpdates .postsWrapper img {
+	float: left;
+	padding-right: 1.77%;
+}
+
+section#latestUpdates .postsWrapper div.subAndBtn {}
+
+section#latestUpdates .postsWrapper div.subAndBtn p.postsSubTitle {
+	padding-top: 0.7%;
+	font-size: 81%;
+	margin-bottom: .625%;
+}
+
+
+section#latestUpdates .postsWrapper div.subAndBtn a {
+	border: 1px solid #dbdbdb;
+	padding: .7%;
+	font-size: 70%;
+	font-weight: 700;
+	margin-top: 1.25%;
+}
+
+section#latestUpdates div.row.withoutCol h4 {
+	padding-top: 2.5%;
+	padding-bottom: 0.625%;
+	padding-left: 20.2%;
+	font-size: 100%;
+	color: #222;
+	position: relative;
+	width: 100%;
+	min-height: 2px;
+}
+
+
+section#latestUpdates > div.row.withoutCol h4::before {
+	content: '';
+	background-color: #222;
+	width: auto;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	left: 0%;
+	right: 0%;
+}
+
+
+/*
+=================================================================
+				Section aroundTheBBC
+=================================================================
+*/
+
+
+section.aroundTheBBC .postsWrapper {}
+
+section.aroundTheBBC {}
+
+section.aroundTheBBC h3 {
+	width: 100%;
+}
+
+/*
+=================================================================
+				Footer
+=================================================================
+*/
+
+
+footer.foot h4 {
+	padding-top: 0.625%;
+	padding-bottom: 0.625%;
+	font-size: 80%;
+	color: #222;
+	position: relative;
+	width: 100%;
+	min-height: 2px;
+}
+
+footer.foot h4::before {
+	content: '';
+	background-color: #222;
+	width: auto;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	right: 0%;
+}
+
+footer.foot div.icnHolder {
+	width: 100%;
+	border-right: 1px solid #dbdbdb;
+}
+
+footer.foot a.largeIcn {
+	float: left;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	width: 88px;
+	height: 88px;
+
+}
+
+footer.foot a.largeIcn i {
+	font-size: 150%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+footer.foot a.largeIcn.twit {
+	color: #1da1f2;
+}
+
+footer.foot a.largeIcn.twit:hover {
+	background-color: #1da1f2;
+	color: #fff;
+}
+
+footer.foot a.largeIcn.face {
+	color: #3d5a98;
+}
+
+footer.foot a.largeIcn.face:hover {
+	background-color: #3d5a98;
+	color: #fff;
+}
+
+footer.foot a.largeIcn.inst {
+	color: #d93175;
+}
+
+footer.foot a.largeIcn.inst:hover {
+	background-color: #d93175;
+	color: #fff;
+}
+
+
+footer.foot .infoHolder .newsDaily,
+footer.foot .infoHolder .newsApp {
+	padding-bottom: 2.5%;
+}
+
+footer.foot .infoHolder .newsDaily i,
+footer.foot .infoHolder .newsApp i {
+	float: left;
+}
+
+footer.foot .infoHolder .newsDaily div.icnDivider,
+footer.foot .infoHolder .newsApp div.icnDivider {
+	float: left;
+	width: 1px;
+	height: 24px;
+	margin-left: 16px;
+	margin-right: 16px;
+	border-right: 1px solid #222;
+}
+
+footer.foot .infoHolder .newsDaily h3.replaceSVG,
+footer.foot .infoHolder .newsApp h3.replaceSVG {
+	float: left;
+	font-size: 80%;
+
+}
+
+footer.foot .infoHolder .newsDaily h3.replaceSVG span,
+footer.foot .infoHolder .newsApp h3.replaceSVG span {
+	font-weight: 100;
+}
+
+footer.foot .infoHolder .newsDaily a,
+footer.foot .infoHolder .newsApp a {
+	display: block;
+	clear: left;
+	text-decoration: none;
+	font-size: 59.09%;
+	color: #333;
+	font-weight: 700;
+	padding-top: 16px;
+}
+
+footer.foot .infoHolder .emailSms p {
+	font-size: 59.09%;
+	color: #333;
+	padding-bottom: 4px;
+}
+
+footer.foot .infoHolder .emailSms a {
+	text-decoration: none;
+	font-size: 100%;
+	color: #333;
+	font-weight: 700;
+
+}
